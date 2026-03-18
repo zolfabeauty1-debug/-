@@ -1,0 +1,7 @@
+name: smart_transport_app
+description: A smart transport app
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_polyline_points: ^2.0.0
