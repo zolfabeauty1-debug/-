@@ -70,3 +70,8 @@ void calculatePrice() {
 
   price = baseFare + (distance * perKm) + (duration * perMin);
 }
+@override
+void initState() {
+  super.initState();
+  calculatePrice();
+}
