@@ -60,3 +60,13 @@ class _MapScreenState extends State<MapScreen> {
 }
 
 double price = 0;
+void calculatePrice() {
+  double distance = 5; // كم (مؤقت)
+  double duration = 10; // دقائق (مؤقت)
+
+  double baseFare = 10;
+  double perKm = 3;
+  double perMin = 0.5;
+
+  price = baseFare + (distance * perKm) + (duration * perMin);
+}
