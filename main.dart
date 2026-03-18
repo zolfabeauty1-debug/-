@@ -1,3 +1,16 @@
+import 'package:flutter/material.dart';
+import 'map_screen.dart';
+
 void main() {
-  print("Smart Transport App Started 🚗");
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MapScreen(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }
