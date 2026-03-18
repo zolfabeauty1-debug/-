@@ -58,3 +58,5 @@ class _MapScreenState extends State<MapScreen> {
     );
   }
 }
+
+double price = 0;
