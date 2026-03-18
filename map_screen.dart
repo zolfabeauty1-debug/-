@@ -37,27 +37,14 @@ class _MapScreenState extends State<MapScreen> {
           ),
 
           // 🔘 زر الطلب
-          Positioned(
-            bottom: 30,
-            left: 20,
-            right: 20,
-            child: ElevatedButton(
-              onPressed: requestRide,
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15),
-                backgroundColor: Colors.black,
-              ),
-              child: Text(
-                "اطلب الآن 🚗",
-                style: TextStyle(fontSize: 18),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+          ElevatedButton(
+  onPressed: () {
+    calculatePrice();
+    setState(() {});
+    print("تم طلب رحلة بالسعر $price");
+  },
+  child: Text("اطلب الآن 🚗"),
+)
 
 double price = 0;
 void calculatePrice() {
